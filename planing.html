@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Fase 2 Diseño paginas web</title>
+</head>
+
+<style type="text/css">
+h1{
+  text-align: center;
+}
+.enum{
+   margin-left: 20px;
+}
+.caja{
+  background: #33D7FF;
+  border-radius: 10px;
+
+}
+.cuerpo{
+  width: 900px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  border: 3px solid black;
+}
+
+</style>
+<body class="cuerpo">
+
+     <h1> Jose Leonardo Garcia Garzon</h1>
+     <h1>  Fase 2 - propiedades basicas de CSS, Display: inline, block, inline-block</h1>
+     <h1>  301122_28</h1>
+     <br>
+    
+    
+    <div class="caja">
+     <h2>Objetivo general</h2>
+
+     <p>
+       Dar a conocer las distintas propiedades basicas de CSS, display
+       las cuales nos sirven para darle estilos o mejor visualizacion a
+       lo que queremos representar por medio de una pagina web.
+     </p>
+
+
+     <div class="enum">
+
+     <li>
+       <h3>
+         Objetivo especifico 1
+       </h3>
+       <p>
+         Explicar el funcionamiento del display inline.
+       </p>
+     </li>
+
+     <li>
+       <h3>
+         Objetivo especifico 2
+       </h3>
+       <p>
+         Explicar el funcionamiento del display block, y como este nos puede ayudar a mejorar los estilos en una pagina web
+       </p>
+     </li>
+
+     <li>
+       <h3>
+         Objetivo especifico 3
+       </h3>
+       <p>
+         Explicar el funcionamiento del display inline-block y las diferencias con los demas.
+       </p>
+     </li>
+    </div>
+    </div>
+
+    <div class="caja">
+
+    <h2>
+      Materiales
+    </h2>
+
+    <div class="enum">
+      
+      <li>
+        <A href="https://developer.mozilla.org/es/docs/Web/CSS/display">
+          DISPLAY INLINE
+        </A>
+      </li>
+
+      <li>
+          <A href="http://w3.unpocodetodo.info/css3/display.php#:~:text=display%20%3A%20block,-El%20elemento%20es&text=Un%20elemento%20block%20siempre%20tiene,de%20otra%20manera%20(%20float%20)"> DISPLAY BLOCK
+          </A>
+      </li>
+
+      <li>
+        <A href="https://www.w3schools.com/css/css_inline-block.asp">
+          DISPLAY INLINE-BLOCK
+        </A>
+      </li>
+
+      <li>
+        <A href="https://www.campusmvp.es/recursos/post/Que-diferencias-hay-entre-display-block-inline-e-inline-block-en-CSS.aspx">
+          DIFERENCIAS ENTRE LOS DISTINTOS TIPOS DE DISPLAY
+        </A>
+      </li>
+
+      <li>
+        <A href="https://desarrolloweb.com/storage/tag_images/actual/sT1RLpDHzInATuKnDUkwXhKoaIOrtS97gBtgiQ6M.png">
+          IMAGEN CSS
+        </A>
+      </li>
+
+      <li>
+        <A href="https://htmldog.com/figures/displayBlock.png">
+          IMAGEN DISPLAY BLOCK
+        </A>
+      </li>
+
+      <li>
+        <A href="https://i.stack.imgur.com/YRu2w.png">
+          IMAGEN DISPLAY INLINE-BLOCK
+        </A>
+      </li>
+
+      <li>
+        <A href="https://i1.wp.com/www.tutorialbrain.com/wp-content/uploads/2019/06/CSS-Display.png?fit=474%2C379&ssl=1">
+          IMAGEN DISPLAY DIFERENCIAS
+        </A>
+      </li>
+    </div>
+    </div>
+
+    <br>
+
+    <div class="caja">
+    <h2>
+      Contenido
+    </h2>
+
+    <div class="enum">
+      <li>
+        <h3>Display inline</h3>
+       <p> Un elemento en linea no comienza en una nueva linea y solo ocupa el ancho necesario.
+        Este es un elemento < span > dentro de un parrafo.
+      </p>
+      <p>
+        son apilables. no tienen ni margin-top ni margin-bottom (por mucho que se lo indiques en el CSS). Si tienen margin-left y margin-right.
+      </p>
+      <p>
+        no respetan ni width ni height. Estas medidas dependeran del size en pixels de su contenido.
+      </p>
+      <p>
+
+        La forma mas facil de saber si un elemento es en linea o no es darle ancho.
+        </p>
+        <p>
+
+        Si le das width:100% y ves que la caja no ocupa todo el ancho disponible entonces se trata de un elemento en linea.
+        </p>
+        <h3>Ejemplo: < span >Hello World< /span ></h3>
+      </li>   
+      <br>
+      <li>
+       <h3> Display block </h3>
+
+       <p>
+         significa que el elemento se muestra como un bloque, como siempre lo han sido los parrafos y encabezados. Un bloque tiene algunos espacios en blanco arriba y abajo y no tolera ningun elemento HTML junto a el, excepto cuando se ordena lo contrario (agregando una declaracion flotante a otro elemento, por ejemplo).
+       </p>
+       <p>
+         Algunas de sus caracteristicas son:
+       </p>
+
+       <p>
+         <li>
+           Fuerzan un salto de linea (ocupan todo el ancho disponible)
+         </li>
+
+         <li>
+           Respetan el width, el height, el margin-top y el margin-bottom indicados por el usuario.
+         </li>
+
+         <h3>Ejemplo:</h3>
+         <img src="https://htmldog.com/figures/displayBlock.png" style="width: 400px; height: 300px">
+       </p>
+      </li>
+
+      <li>
+        <h3>Display inline-block</h3>
+        <p>
+          El elemento aparece en linea pero se comporta como un elemento block. Un elemento inline-block resulta muy util cuando queremos dar una anchura al elemento.
+        </p>
+        <p>
+          crea cajas que son de bloque y en linea de forma simultanea. Una caja de tipo inline-block se comporta como si fuera de bloque, pero respecto a los elementos que la rodean es una caja en linea.
+        </p>
+          <h3>Ejemplo:</h3>
+
+          <img src="https://i.stack.imgur.com/YRu2w.png" style="width: 400px; height: 300px">
+      </li>
+
+      <li>
+        <h3>¿Cual es la diferencia entre Display inline, block e inline-block?</h3>
+        <p>
+          <li>inline: Muestra en la misma linea (respetando el flujo) todos los elementos y no acepta las propiedades width, height ni margenes verticales.</li></p>
+        <p>
+          <li>block: Muestra los elementos en lineas independientes y acepta las propiedades width, height y margenes verticales.</li>
+        </p>
+        <p>
+          <li>inline-block: Su comportamiento es una mezcla entre los dos anteriores, se muestran en la misma linea (respetando el flujo) todos los elementos y ademas, acepta las propiedades width, height y margenes verticales.</li>
+        </p>
+      </li>
+
+      <h3>Ejemplo:</h3>
+      <img src="https://i1.wp.com/www.tutorialbrain.com/wp-content/uploads/2019/06/CSS-Display.png?fit=474%2C379&ssl=1" style=" width: 400px; height: 300px">
+    </div>
+
+
+    </div>
+    <br>
+
+    <h1 style="text-align: center;">MOCKUP</h1>
+    <img src="https://github.com/jlgarciag/DSW-LeonardoGarcia/blob/master/mockup.png?raw=true" style="width: 100%">
+
+
+</body>
+</html>
