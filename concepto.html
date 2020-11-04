@@ -30,6 +30,17 @@
 .section h2{
 	text-align: center;
 }
+.footer p{
+	text-align: center;
+}
+.footer{
+	background-color: #F0B429;
+}
+.referencia {
+	margin-left: 10px;
+	margin-top: 3%;
+
+}
 </style>
 <body>
 
@@ -57,17 +68,17 @@
 
 			<div>
 				<ul class="subitem">
-					<li><a href="">¿Que es Display?</a></li>
-					<li><a href="">¿Display inline?</a></li>
-					<li><a href="">¿Display block?</a></li>
-					<li><a href="">¿Display inline-block?</a></li>
+					<li><a href="#display">¿Que es Display?</a></li>
+					<li><a href="#inline">¿Display inline?</a></li>
+					<li><a href="#block">¿Display block?</a></li>
+					<li><a href="#inlineblock">¿Display inline-block?</a></li>
 				</ul>
 			</div>
 
 
 
 			<div>			
-				<section class="section">
+				<section class="section" id="display">
 					<h2>¿Que es Display?</h2>
 
 					<p>
@@ -106,7 +117,7 @@
 
 				</section>
 
-				<section class="section">
+				<section class="section" id="inline">
 
 					<h2> ¿Display inline?</h2>
 					<img src="https://github.com/jlgarciag/DSW-LeonardoGarcia/blob/master/inline%20image.png?raw=true" style="float: right;">					
@@ -134,7 +145,7 @@
 					</p>
 				</section>
 
-				<section class="section">
+				<section class="section" id="block">
 					<h2> ¿Display block?</h2>
 
 					<p>
@@ -160,8 +171,10 @@
 					</p>
 				</section>
 
-				<section class="section">
+				<section class="section" id="inlineblock">
 					<h2>¿Display inline-block?</h2>
+
+					<img src="https://github.com/jlgarciag/DSW-LeonardoGarcia/blob/master/inline-block.png?raw=true" style="float: left;">
 
 					<p>
 						En comparación con display: inline, la principal diferencia es que display: inline-blockpermite establecer un ancho y un alto en el elemento.
@@ -180,14 +193,45 @@
 						<li>textarea</li>
 						<br>
 						Curiosamente, notará que la mayoría de estos elementos están relacionados con < form > elementos. Los bloques en línea son de naturaleza muy similar a los elementos en línea. Pueden hacer todo lo que hace en línea, ¡pero también se pueden configurar algunos anchos, alturas y márgenes verticales!.
-						Crear un formulario simple es fácil con elementos de bloque en línea. Un problema con los bloques en línea es que crean espacios a su alrededor. (Observe entre la entrada y el botón).
+						Crear un formulario simple es fácil con elementos de bloque en línea. Un problema con los bloques en línea es que crean espacios a su alrededor. (Observe entre la entrada y el botón). como se observa en la imagen de esta seccion , hay parrafos de textos en bloques, esta es la funcion de block , pero como vemos que estan en linea , lo podemos visualizar de esa manera, por ende esta es la propiedad <strong>inline-block</strong> que estamos agregando para poder obtener esta visualizacion.
 					</p>
-					
-
 				</section>
 
+			<section class="referencia">
+				<h2>Referencias</h2>
+				<li><a href="https://developer.mozilla.org/es/docs/Web/CSS/display">display. (2020, 21 octubre). Recuperado de https://developer.mozilla.org/es/docs/Web/CSS/display</a></li>
+				<li><a href="https://desarrolladoresweb.org/css/propiedad-display-y-visivility-en-css/">Desarrolladoresweb.org. (2020, 13 junio). Propiedad display y visivility en CSS. Recuperado de https://desarrolladoresweb.org/css/propiedad-display-y-visivility-en-css/</a></li>
+				<li><a href="http://dis.um.es/%7Elopezquesada/documentos/IES_1213/LMSGI/curso/UT5/libroswebcss21/www.librosweb.es/referencia/css/display.html">Propiedad display | Referencia de CSS 2.1 | LibrosWeb.es. (s. f.). Recuperado de http://dis.um.es/%7Elopezquesada/documentos/IES_1213/LMSGI/curso/UT5/libroswebcss21/www.librosweb.es/referencia/css/display.html</a></li>
+				<li><a href="https://pablomonteserin.com/display-block-inline-inline-block-float/">M. (2020, 18 junio). display block, inline, inline-block y float. Recuperado de https://pablomonteserin.com/display-block-inline-inline-block-float/</a></li>
+				<li><a href="https://lenguajecss.com/css/maquetacion-y-colocacion/tipos-de-elementos/">Tipos de elementos - CSS en español. (s. f.). Recuperado de https://lenguajecss.com/css/maquetacion-y-colocacion/tipos-de-elementos/</a></li>
+				<li><a href="https://css-tricks.com/almanac/properties/d/display">Cope, S. (2020, 2 enero). display. Recuperado de https://css-tricks.com/almanac/properties/d/display/</a></li>
+				<li><a href="https://blog.4psa.com/wp-content/uploads/block-inline1.png">[Ilustracion]. (s. f.). Inline. Recuperado de https://blog.4psa.com/wp-content/uploads/block-inline1.png</a></li>
+				<li><a href="http://w3.unpocodetodo.info/css3/display.php#:%7E:text=display%20%3A%20block,-El%20elemento%20es&text=Un%20elemento%20block%20siempre%20tiene,de%20otra%20manera%20(%20float%20)">enxaneta.info. (s. f.). Entender la propiedad display. Recuperado de http://w3.unpocodetodo.info/css3/display.php#:%7E:text=display%20%3A%20block,-El%20elemento%20es&text=Un%20elemento%20block%20siempre%20tiene,de%20otra%20manera%20(%20float%20).</a></li>
+				<li><a href="https://www.w3schools.com/jsref/prop_style_display.asp">HTML DOM Style display Property. (s. f.). Recuperado de https://www.w3schools.com/jsref/prop_style_display.asp</a></li>
+				<li><a href="https://linguinecode.com/post/css-display-flex-block-inline-block-table">How to use the top 5 CSS display values: none, block, inline-block, table, and flex. (2019, 22 mayo). Recuperado de https://linguinecode.com/post/css-display-flex-block-inline-block-table</a></li>
+				<li><a href="https://www.bitdegree.org/learn/css-display">BitDegree. (2016, 3 noviembre). The Use of CSS Display: Inline, Block and Hidden Elements. Recuperado de https://www.bitdegree.org/learn/css-display</a></li>
+				<li><a href="https://dev.to/shimphillip/inline-vs-inline-block-vs-block-280h">Shim, P. (2020, 27 febrero). Inline vs Inline-block vs Block. Recuperado de https://dev.to/shimphillip/inline-vs-inline-block-vs-block-280h</a></li>
+				<li><a href="https://i.stack.imgur.com/2RFE5.png">[Ilustracion]. (s. f.). Elementos de bloque en línea de la misma altura en unas pocas líneas. Recuperado de https://i.stack.imgur.com/2RFE5.png</a></li>
+				<li><a href="https://www.campusmvp.es/recursos/image.axd?picture=bloques-block_1.png">[Ilustracion]. (s. f.). ¿Qué diferencias hay entre display:block, inline e inline-block en CSS? Recuperado de https://www.campusmvp.es/recursos/image.axd?picture=bloques-block_1.png</a></li>
+				
+
+			</section>
 
 
+
+			</div>
+
+
+			<div>
+			<hr>
+			<footer class="footer">
+				<div>
+					<p>Jose Leonardo Garcia Rincon</p>
+					<p>Universidad Nacional Abierta y a Distancia</p>
+					<p>Desarrollo de paginas web</p>
+					<p>leogar2001@hotmail.com</p>
+				</div>
+			</footer>
 
 			</div>
 			
