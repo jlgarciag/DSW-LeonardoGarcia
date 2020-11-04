@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>conceptos</title>
+</head>
+<style type="text/css">
+.ul li{
+	display: inline-block;
+	font-size: 25px;
+	margin-right: 50px;
+}
+.ul a{
+	text-decoration: none;
+	color: white;
+}
+.subitem li{
+	display: inline-block;
+	margin-right: 50px;
+}
+.subitem {
+	text-align: -webkit-center;
+}
+.section{
+	border-radius: 30px;
+	border: #F0B429 5px solid;
+	width: 98%;
+	margin-left: 10px;
+	margin-top: 3%
+}
+.section h2{
+	text-align: center;
+}
+</style>
+<body>
+
+		<header>
+				<div style="    text-align: -webkit-center;">
+	
+	<img src="https://github.com/jlgarciag/DSW-LeonardoGarcia/blob/master/logoUNAD.jpg?raw=true">	
+	<h1 >Propiedades basicas de CSS, Display: inline, block, inline-block</h1>
+
+	</div>
+
+	<nav style="background-color: #F0B429; text-align: center;">
+		<ul class="ul">
+				<li><a href="">INICIO</a></li>				
+				<li><a href="">CONCEPTOS</a></li>				
+				<li><a href="">RECURSOS</a></li>	
+				<li><a href="">AUTOEVALUACION</a></li>
+				<li><a href="">AUTOR</a></li>
+		</ul>
+	</nav>
+		</header>
+
+
+		<content>
+
+			<div>
+				<ul class="subitem">
+					<li><a href="">¿Que es Display?</a></li>
+					<li><a href="">¿Display inline?</a></li>
+					<li><a href="">¿Display block?</a></li>
+					<li><a href="">¿Display inline-block?</a></li>
+				</ul>
+			</div>
+
+
+
+			<div>			
+				<section class="section">
+					<h2>¿Que es Display?</h2>
+
+					<p>
+						La propiedad CSS display especifica si un elemento es tratado como block or inline element y el diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible). 
+						<br>
+
+						Formalmente la propiedad display establece los tipos de visualización interna y externa de un elemento. La tipo externa establece la participacion de un elemento en flow layout; la tipo interna establece el layout(Diseño) de los hijos.
+						<br>
+
+						En la actualidad, es mejor especificar display utilizando una sola palabra clave; aunque las últimas especificaciones permiten combinar algunas palabras clave, esto aún no está bien soportado por los navegadores.
+						<br>
+
+						hay tres principales atributos que se usan mucho a la hora de usar este componente CSS los cuales son:
+						<li>inline</li>
+						<li>block</li>
+						<li>inline-block</li>
+						<br>
+
+						Por defecto, cada elemento de una página web se comporta como una caja; además como mencionamos en la introducción, existen elementos HTML de línea y de bloque, los mismos que desarrollamos en el curso de HTML. Para nuestro propósito recordemos rápidamente:
+
+						<li>Elementos de línea.- estos ocupan solo lo necesario, por lo cual pueden continuar en una misma linea sin hacer salto de línea; ejemplo de ellos son: enlaces, imágenes, elementos en span, textos sub y super, etc.</li>
+						<li>Elemento de bloque.- estos elementos ocupan el ancho máximo disponible, por lo cual realizan salto de línea al presentarse en la estructura de la página; ejemplo de ellos tenemos a: párrafos, bloques div, tablas, formularios, listas, etc.</li>
+						<br>
+
+						De hecho, la propiedad display es una de las más complejas de CSS 2.1, ya que establece el tipo de la caja que genera cada elemento. La propiedad display es tan compleja que casi ningún navegador es capaz de mostrar correctamente todos sus valores.
+						<br>
+
+						El valor más sencillo de display es none que hace que el elemento no genere ninguna caja. El resultado es que el elemento desaparece por completo de la página y no ocupa sitio, por lo que los elementos adyacentes ocupan su lugar. Si se utiliza la propiedad display: none sobre un elemento, todos sus descendientes también desaparecen por completo de la página.
+						<br>
+
+						Si se quiere hacer un elemento invisible, es decir, que no se vea pero que siga ocupando el mismo sitio, se debe utilizar la propiedad visibility. La propiedad <strong>display: none</strong> se utiliza habitualmente en aplicaciones web dinámicas creadas con JavaScript y que muestran/ocultan contenidos cuando el usuario realiza alguna acción como pulsar un botón o un enlace.
+						<br>
+
+						Los otros dos valores más utilizados son block e inline que hacen que la caja de un elemento sea de bloque o en línea respectivamente. El siguiente ejemplo muestra un párrafo y varios enlaces a los que se les ha añadido un borde para mostrar el espacio ocupado por cada caja:
+					</p>
+
+				</section>
+
+				<section class="section">
+
+					<h2> ¿Display inline?</h2>
+					
+					<p>
+						Los elementos con este estilo se van apilando en horizontal y hacen caso omiso del width y el height que les indicamos. Tampoco procesan muy bien el padding asignado. Si te das cuenta, este estilo define un comportamiento que es exactamente el contrario del estilo anterior. Este es el estilo por defecto de las etiquetas a y span. Se utiliza fundamentalmente para contener texto.
+						<br>
+						<br>
+							Se coloca en horizontal. Se adapta al ancho de su contenido. Ignora width o height.
+
+							<br>
+							<br>
+
+							para poder comprender este atributo de display podemos observar en la siguiente imagen un ejemplo de este atributo que nos puede ayudar mucho a la hora de hacer menus.
+					</p>
+
+
+				</section>
+
+			</div>
+			
+			
+		</content>
+
+
+
+
+
+
+
+</body>
+</html>
