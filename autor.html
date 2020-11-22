@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<title>Autor</title>
+	<meta charset="utf-8">
 </head>
 <style type="text/css">
 .ul li{
 	display: inline-block;
-	font-size: 25px;
+	font-size: 30px;
 	margin-right: 50px;
 }
 .ul a{
@@ -22,8 +23,78 @@
 	background-color: #F0B429;
 	width: 100%;
 	text-align: center;
+	bottom: 0;
+	position: unset;
+}
+body{
+	overflow-y: 0;
+	min-height: 100%;
+    top: 0;
+    margin:0;
+    padding:0;
+}
+.navegacion{
+	background: #F0B429;
+	
+}
+.navegacion li{
+	display: inline-block;
+	list-style: none;
+}
+.navegacion a{
+	color:#ffff;
+	font-size: 25px
 }
 
+.navegacion ul{
+	list-style: none;
+}
+.menubar > li{
+	position: relative;
+	display: inline-block;
+}
+.menubar{
+	text-align: center;
+}
+
+.menubar > li > a{
+	display: block;
+	margin-right: 50px;
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+
+}
+
+.menubar li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background:  #004669;
+	visibility: hidden;
+	width: 60%;
+	opacity: 0;
+	transition: opacity 1.5s;
+	z-index: 3;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	text-decoration: none;
+	margin-left: -30px
+}
+
+.menubar li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
 
 </style>
 <body>
@@ -35,14 +106,28 @@
 
 	</div>
 
-	<nav style="background-color: #F0B429; text-align: center;">
-		<ul class="ul">
-				<li><a href="Inicio.html#slide1">INICIO</a></li>
-				<li><a href="concepto.html">CONCEPTOS</a></li>		   <li><a href="recursos.html">RECURSOS</a></li>	
-				<li><a href="autoevaluacion.html">AUTOEVALUACION</a></li>
-				<li><a href="autor.html">AUTOR</a></li>
-		</ul>
-	</nav>
+	<nav class="navegacion">
+			<ul class="menubar">
+				<li><a href="Inicio.html#slide1">Inicio</a></li>
+				<li><a href="concepto.html">Conceptos</a>
+					<ul class="submenu">
+						<li><a href="concepto.html#display">Display</a></li>
+						<li><a href="concepto.html#inline">inline</a></li>
+						<li><a href="concepto.html#block">block</a></li>
+						<li><a href="concepto.html#inlineblock">inline-block</a></li>
+					</ul>
+				</li>
+				<li><a href="recursos.html">Recursos</a></li>
+				<li><a href="autoevaluacion.html">Autoevaluacion</a>
+					<ul class="submenu">
+						<li><a href="autoevaluacion.html#sopaDeLetras">Sopa de letras</a></li>
+						<li><a href="autoevaluacion.html#crucigrama">Crucigrama</a></li>
+					</ul>
+
+				</li>
+				<li><a href="autor.html">Autor</a></li>
+			</ul>
+		</nav>
 
 
 	<div style="text-align: center;">
